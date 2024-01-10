@@ -1,2 +1,4 @@
 imagenes
-.vscode
+*.vscode
+
+*.txt
