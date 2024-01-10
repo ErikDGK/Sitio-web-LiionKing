@@ -1,0 +1,5 @@
+Se entregan SI O SI 5 paginas, de las cuales 2 responsive (desktop + mobile)
+Responsive: grid + flexbox o grid system de bootstrap
+Incorporar algún componente de bootstrap (ej. navbar)
+Estilos propios, NADA de estilos de bootstrap
+Se entrega SI O SI con repositorio de github
