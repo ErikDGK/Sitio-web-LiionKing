@@ -3,3 +3,6 @@ Responsive: grid + flexbox o grid system de bootstrap
 Incorporar algún componente de bootstrap (ej. navbar)
 Estilos propios, NADA de estilos de bootstrap
 Se entrega SI O SI con repositorio de github
+
+
+agregar media query y tamaños de pantalla para bootstrap en la seccion soporte
