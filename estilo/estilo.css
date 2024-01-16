@@ -22,7 +22,7 @@
 
 /*empiezan las aplicaciones generales*/
 header{
-    background-color: rgb(58, 58, 126);
+    background-color:  rgb(57, 118, 168);
 }
 
 a.logo{
@@ -36,6 +36,15 @@ h1 {
     font-weight: bold;
     color: silver;
     background-color: rgb(57, 118, 168);
+    padding: 20px 10px 0px 10px;
+}
+
+h2 {
+text-align: center;
+}
+
+p{
+    text-align: center;
 }
 
 img {
@@ -52,6 +61,8 @@ footer{
 .container-fluid{
     background-color: rgb(57, 118, 168);
 }
+
+
 .nav-item {
     
     font-family: 'Cinzel', serif;
@@ -92,7 +103,7 @@ section.grid {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 480px;
+    grid-template-rows: 1fr 6fr;
     grid-template-areas: 
     "titulo titulo titulo"
     "grid1 grid2 grid3";
