@@ -18,7 +18,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <h1>LiIonKing</h1>
@@ -52,14 +52,30 @@
     </header>
 
     <main>
-        <section class="carruzel">
-            <!--aca iria un carruzel de imagenes-->
-            <img src="imagenes/michiiii.PNG" alt="un gatito">
-            <img src="imagenes/never metallica.jpg" alt="cartelera de never metallica">
-            <img src="imagenes/liionKing logo 3.jpeg" alt="posible logotipo">
-        </section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas neque quas odio, illum omnis sapiente et
-            autem ea fugit ipsum sint sequi exercitationem quis ut veniam quam obcaecati nulla necessitatibus?</p>
+        <!--aca iria un carruzel de imagenes-->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item car-item active">
+                    <img src="imagenes/liionKing logo 3.jpeg" class="d-block w-100 car-img" alt="...">
+                </div>
+                <div class="carousel-item car-item">
+                    <img src="imagenes/michiiii.PNG" class="d-block w-100 car-img" alt="...">
+                </div>
+                <div class="carousel-item car-item">
+                    <img src="imagenes/never metallica.jpg" class="d-block w-100 car-img" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
     </main>
 
