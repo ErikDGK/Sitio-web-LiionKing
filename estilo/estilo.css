@@ -1,18 +1,39 @@
-/*media queris*/
-/*
-@media screen (max-width 425px) {
-}
-@media screen (min-width 425px) and (max-width 768px) {
-}
-@media screen (min-width 425px) and (max-width 768px) { 
-}
-*/
-
 /*sacar el margen y padding por defecto*/
 * {
     margin: 0px;
     padding: 0px;
 }
+
+/*Soporte y media queris*/
+
+@media (min-width:354px) and (max-width:380px) {
+    nav h1{
+        font-size: 2.7rem; /* basado en la pantalla de; galaxy s8+ cuya pantalla es 360px*/
+    }
+}
+@media (max-width:354px) {
+    nav h1{
+        font-size: 1.8rem; /* basado en la pantalla de; galaxy fold cuya pantalla es 280px*/
+    }
+    .navbar {
+        --bs-navbar-padding-x: 0;
+        /*--bs-navbar-padding-y: 0.5rem;*/
+        --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+        --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+        --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+        --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-brand-padding-y: 0.3125rem;
+        --bs-navbar-brand-margin-end: 1rem;
+        --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-nav-link-padding-x: 0.5rem;
+        --bs-navbar-toggler-padding-y: 0.25rem;
+        --bs-navbar-toggler-padding-x: 0.75rem;
+        --bs-navbar-toggler-font-size: 1.25rem;
+        --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+        --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+        --bs-navbar-toggler-focus-width: 0.25rem;
+        --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    }}
 
 /*Fuentes a utilizar*/
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
@@ -64,11 +85,36 @@ footer{
 }
 
 /*barra de navegacion*/
+
+nav a {
+    text-decoration: none;
+}
+nav a h1{
+    background: none;
+    
+}
+
+.navbar-toggler-icon {
+    width: 2em;
+    height: 1.5em;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
 .container-fluid{
     background-color: rgb(57, 118, 168);
 }
 
-
+.nav-link{
+    color: aliceblue;
+    font-weight: bolder;
+}
 .nav-item {
     
     font-family: 'Cinzel', serif;
@@ -90,7 +136,7 @@ footer{
 }
 .car-img{
  height: 100%;
- /*object-fit: cover;      con las imagenes que tengo queda mejor sin el cover pero despues vere*/
+/* object-fit: cover;     con las imagenes que tengo queda mejor sin el cover pero despues vere*/
  filter: brightness(0.8);
 }
 /*terminan las aplicaciones generales*/
@@ -212,15 +258,3 @@ a{
 }
 
 */
-
-.card-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.card {
-    border: 2px;
-    width: 250px;
-    height: 250px;
-}
