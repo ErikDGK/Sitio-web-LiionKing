@@ -15,26 +15,10 @@
     nav h1{
         font-size: 1.8rem; /* basado en la pantalla de; galaxy fold cuya pantalla es 280px*/
     }
-    .navbar {
-        --bs-navbar-padding-x: 0;
-        /*--bs-navbar-padding-y: 0.5rem;*/
-        --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
-        --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
-        --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
-        --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
-        --bs-navbar-brand-padding-y: 0.3125rem;
-        --bs-navbar-brand-margin-end: 1rem;
-        --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
-        --bs-navbar-nav-link-padding-x: 0.5rem;
-        --bs-navbar-toggler-padding-y: 0.25rem;
-        --bs-navbar-toggler-padding-x: 0.75rem;
-        --bs-navbar-toggler-font-size: 1.25rem;
-        --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
-        --bs-navbar-toggler-border-radius: var(--bs-border-radius);
-        --bs-navbar-toggler-focus-width: 0.25rem;
-        --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
-    }}
-
+    h2 {
+        font-size: 1.5rem !important;
+    }
+}
 /*Fuentes a utilizar*/
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 /*font-family: 'Cinzel', serif;*/
@@ -60,7 +44,7 @@ h1 {
 
 h2 {
     font-family: 'Cinzel', serif;
-    font-size: 6vw ; 
+    font-size: 3em ; 
     text-align: center;
 }
 
@@ -148,6 +132,12 @@ nav a h1{
 /*Fin personalizar pag-1 productos*/
 
 /*Personalizar pag-2 Descargas*/
+.card-title{
+    font-family: 'Cinzel', serif;
+    font-size: medium;
+    font-weight: bolder;
+}
+
 /*Fin personalizar pag-2 Descargas*/
 
 /*Personalizar pag-3 soporte*/
