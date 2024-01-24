@@ -7,3 +7,13 @@ Se entrega SI O SI con repositorio de github
 
 agregar media query y tamaños de pantalla para bootstrap en la seccion soporte
 aa
+
+
+
+
+
+
+Sitio 100% responsive
+código de estilos en SASS
+partials, nesting, operador &, variables, mixins, extend, maps
+NADA DE COONTENIDO SIMULADO
