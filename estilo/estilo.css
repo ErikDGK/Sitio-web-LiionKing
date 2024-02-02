@@ -14,9 +14,13 @@
 
   h2 {
     font-size: 1.5rem !important; } }
-img {
-  height: auto;
-  width: auto; }
+main {
+  background-color: #3c3c3c; }
+
+video {
+  width: 100%;
+  height: 800px;
+  object-fit: cover; }
 
 * {
   font-family: 'Cinzel', serif; }
@@ -24,6 +28,34 @@ img {
 a {
   text-decoration: none; }
 
+/*mixin sin argumentos*/
+/*
+main{
+    @include flexb( flex , row , nowrap , center , center )
+}
+
+section{
+    @include flexb( flex , column , nowrap , flex-start , flex-start )
+}
+*/
+/*
+@mixin grid($columnas , $espacio){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espacio;
+
+@media screen and (max-width:480px) {
+    grid-template-columns: 1fr;
+    gap: 0em;
+}
+}
+main{
+    @include grid(4 , 1em )
+}
+section{
+    @include grid(3, 1em )
+}
+*/
 nav {
   background-color: #363636;
   width: 100%;
@@ -32,7 +64,7 @@ nav {
     text-decoration: none; }
     nav div a h1 {
       font-size: 2.5rem;
-      color: #00eeff;
+      color: #00ECFF;
       font-weight: bolder;
       font-style: oblique; }
 
@@ -52,7 +84,7 @@ nav {
 .nav-link {
   padding-left: 1.5rem !important;
   font-size: 1.5rem;
-  color: aqua; }
+  color: #00ECFF; }
   .nav-link:hover {
     color: #f4ec0a; }
 
@@ -61,7 +93,7 @@ nav {
   width: 1.5em;
   height: 1.5em;
   vertical-align: middle;
-  background-image: url(../../../imagenes/lista.png);
+  background-image: url(../../../imagenes/lista.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%; }
@@ -73,6 +105,10 @@ nav {
   text-decoration-line: line-through; }
 
 .w-100 {
+  background-color: black;
   height: 480px; }
+
+.carta {
+  width: auto; }
 
 /*# sourceMappingURL=estilo.css.map */
