@@ -82,8 +82,8 @@ nav {
     flex-direction: row;
     justify-content: flex-end; } }
 .nav-link {
-  padding-left: 1.5rem !important;
-  font-size: 1.5rem;
+  padding-block-end: 0.5rem !important;
+  font-size: 1rem;
   color: #00ECFF; }
   .nav-link:hover {
     color: #f4ec0a; }
