@@ -17,3 +17,32 @@ Sitio 100% responsive
 código de estilos en SASS
 partials, nesting, operador &, variables, mixins, extend, maps
 NADA DE COONTENIDO SIMULADO
+
+
+
+
+
+textos:
+
+baterias:
+Paquetes de baterías hechos a medida para satisfacer sus necesidades 
+Nuestros paquetes de baterías están listos para usar y adaptados a sus necesidades específicas. La tecnología de baterías de iones de litio refrigeradas por líquido mejora la eficiencia y la vida útil más allá de los paquetes de baterías de iones de litio disponibles en el mercado. El diseño modular lo convierte en una solución ideal si el espacio de instalación es limitado. Los paquetes de baterías son adecuados para todo tipo de movilidad y aplicaciones de alta potencia.
+
+Paquete directo listo para usar
+Diseñado a medida para adaptarse a cualquier espacio.
+Baterías que permanecen frescas con alta potencia de salida
+Ideal para aplicaciones de vehículos eléctricos de alto voltaje
+
+
+Nuestros paquetes de baterías están hechos a medida por nuestro equipo de expertos siguiendo los requisitos exactos de su aplicación. 
+
+
+Construyendo un paquete de baterías
+Somos plenamente conscientes de que construir un paquete de baterías seguro, robusto, fiable y duradero no es fácil. Específicamente para volúmenes de producción bajos o medios. Una de nuestras principales competencias es mantener los costes de los envases directos en volumen reducido a un precio justo.
+
+Paquetes de baterías de iones de litio
+Para casos comerciales que necesitan ahorrar espacio y peso, ofrecemos ingeniería de paquetes de baterías de iones de litio de alto rendimiento. Diseñamos y fabricamos soluciones de paquetes de baterías que satisfacen sus necesidades específicas. 
+
+Paquetes de baterías LiFePo4
+Para casos comerciales donde el tamaño y el peso no son la consideración más importante, ofrecemos ingeniería de paquetes de baterías LiFePo4. Este tipo de celda tiene una temperatura menos crítica, tiene una vida útil excelente y es mucho más económica por kWh. En la industria, la construcción y la agricultura, este tipo de células satisfacen las necesidades tanto técnicas como comerciales. 
+
