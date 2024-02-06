@@ -1,63 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+* {
+  margin: 0px;
+  top: 0px; }
+
+@media (min-width: 354px) and (max-width: 380px) {
+  nav h1 {
+    font-size: 2.7rem;
+    /* basado en la pantalla de; galaxy s8+ cuya pantalla es 360px*/ } }
+@media (max-width: 354px) {
+  nav h1 {
+    font-size: 1.8rem;
+    /* basado en la pantalla de; galaxy fold cuya pantalla es 280px*/ }
+
+  h2 {
+    font-size: 1.5rem !important; } }
+main {
+  background-color: #3c3c3c; }
+
+video {
+  width: 100%;
+  height: 600px;
+  object-fit: cover; }
+
+* {
+  font-family: 'Cinzel', serif; }
+
+a {
+  text-decoration: none; }
+
+/*mixin sin argumentos*/
 /*
-Error: File to import not found or unreadable: partials/utilities/variables.
-        on line 7 of scss/main.scss
+main{
+    @include flexb( flex , row , nowrap , center , center )
+}
 
-2: @import 'partials/base/reset';
-3: @import 'partials/base/tipografia';
-4: 
-5: //Utilities
-6: 
-7: @import "partials/utilities/variables";
-8: @import "partials/utilities/maps";
-9: @import "partials/utilities/mixins";
-10: 
-11: //Components 
-12: @import "partials/components/form";
-
-Backtrace:
-scss/main.scss:7
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+section{
+    @include flexb( flex , column , nowrap , flex-start , flex-start )
+}
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: partials/utilities/variables.\A         on line 7 of scss/main.scss\A \A 2: @import 'partials/base/reset';\A 3: @import 'partials/base/tipografia';\A 4: \A 5: //Utilities\A 6: \A 7: @import \"partials/utilities/variables\";\A 8: @import \"partials/utilities/maps\";\A 9: @import \"partials/utilities/mixins\";\A 10: \A 11: //Components \A 12: @import \"partials/components/form\";"; }
+/*
+@mixin grid($columnas , $espacio){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espacio;
+
+@media screen and (max-width:480px) {
+    grid-template-columns: 1fr;
+    gap: 0em;
+}
+}
+main{
+    @include grid(4 , 1em )
+}
+section{
+    @include grid(3, 1em )
+}
+*/
+nav {
+  background-color: #363636;
+  width: 100%;
+  display: flex; }
+  nav div a {
+    text-decoration: none; }
+    nav div a h1 {
+      font-size: 2.5rem;
+      color: #00ECFF;
+      font-weight: bolder;
+      font-style: oblique; }
+
+.navbar {
+  padding: 0.3rem; }
+
+.navbar-collapse {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+@media (min-width: 990px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; } }
+.nav-link {
+  padding-block-end: 0.5rem !important;
+  font-size: 1rem;
+  color: #00ECFF; }
+  .nav-link:hover {
+    color: #f4ec0a; }
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url(../../../imagenes/lista.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%; }
+
+.active {
+  color: antiquewhite;
+  font-weight: bolder;
+  font-style: oblique;
+  text-decoration-line: line-through; }
+
+.w-100 {
+  background-color: black;
+  height: 480px; }
+
+.carta {
+  width: auto; }
+
+/*# sourceMappingURL=estilo.css.map */
