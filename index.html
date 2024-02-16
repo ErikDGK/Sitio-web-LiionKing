@@ -7,7 +7,8 @@
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="estilo/estilo.css">
 
@@ -52,99 +53,53 @@
     </header>
 
     <main>
-
-        <div class="vidtext">
-            <div class="text">
-                <video playsinline="" autoplay="" loop="" muted="" class="w-100 d-block img-hlavicky" poster="imagenes/1400x350_video_web_propulsion.mp4">
-                    <source src="imagenes/1400x350_video_web_propulsion.mp4" type="video/mp4"></video>
+        <div id="video-container" class="w-100">
+            <video src="imagenes/1400x350_video_web_propulsion.mp4" autoplay loop muted></video>
+            <div id="texto-superpuesto">
                 <h2>UNIDADES DEL SISTEMA DE PROPULSIÓN ELÉCTRICA</h2>
                 <p>LiIonKing es una de las tantas empresas del mundo en introducir controladores de velocidad
-                    electrónicos basados en procesadores.
+                    electrónicos basados en procesadores. <br>
                     Durante los últimos veinte dias, adquirimos mucho conocimiento en el diseño, desarrollo y
                     fabricación de unidades de sistemas de propulsión eléctrica , así como en la prueba de numerosas
                     combinaciones de motores, ESC y hélices para nuestros proyectos porque todavia no hay clientes.
-                </p>           
+                </p>
+                
             </div>
         </div>
-
-        <!--carruzel de imagenes de producto grandes-->
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item car-item active">
-                    <img src="imagenes/200kw.svg" class="d-block w-100 car-img"
-                        alt="motor de 200kw sin escobillas preparado con refrigeracion liquida">
-                </div>
-                <div class="carousel-item car-item">
-                    <img src="imagenes/paquete-de-baterias.svg" class="d-block w-100 car-img"
-                        alt="paquete de 1baterias lifepo4 armado">
-                </div>
-                <div class="carousel-item car-item">
-                    <img src="imagenes/esc-100kw.svg" class="d-block w-100 car-img"
-                        alt="controlador de velocidad de motores BLDC de hasta 200kw o ESC">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <!--carruzel con (cartas) categorias de productos ej telefonos - tablets - noteboocks - ups-->
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="imagenes/motores electricos.svg" class="img-fluid rounded-start"
-                        alt="motores sin escobillas de varias potencias">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Motores</h5>
-                        <p class="card-text">aqui encontraras un propulsor para tu idea</p>
-                        <p class="card-text"><small class="text-body-secondary"></small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
         <section>
-            <div>
-                <a href="">
+            <div class="carta-b" >
+                <a href="paginas/motores.html">
                     <img src="imagenes/motores electricos.svg" alt="motores sin escobillas de varias potencias">
                     <h2>Motores</h2>
                 </a>
 
             </div>
-            <div class="card">
-                <a href="">
+            <div class="carta-b" >
+                <a href="paginas/controladores.html">
                     <img src="imagenes/esc-100kw.svg"
                         alt="controlador de velocidad de motores BLDC de hasta 200kw o ESC">
-                    <h2>Controladores</h2>
+                        <h2>Controladores</h2>
                 </a>
 
             </div>
-            <div class="card">
-                <a href="">
-                    <img src="imagenes/lifepo4.svg" alt="celda de bateria de Lifepo4">
+            <div class="carta-b" >
+                <a href="paginas/sistembat.html">
+                    <img src="imagenes/bateria-lifepo4.svg" alt="celda de bateria de Lifepo4">
                     <h2>Baterias</h2>
                 </a>
 
             </div>
-            <div class="card">
-                <a href="">
+            <div class="carta-b" >
+                <a href="paginas/sistembat.html">
                     <img src="imagenes/gestion-baterias.svg"
                         alt="cuatro plaquetas que conforman el circuito de gestion de bateria">
                     <h2>Gestion de Bateria</h2>
                 </a>
 
             </div>
-            <div class="card">
-                <a href="">
+            <div class="carta-b" >
+                <a href="paginas/controladores.html">
                     <img src="imagenes/accesorios.svg"
                         alt="accesorios como electronica auxiliar, displays y conectores">
                     <h2>Accesorios</h2>
@@ -153,24 +108,18 @@
             </div>
         </section>
 
-        <!--acordion o imagen de la empresa con una descripcion u objetivos de esta-->
-        <section>
-            <div>
-                <img src="imagenes/michiiii.PNG" alt="">
-            </div>
-            <div>
-                <h2>Sobre Nosotros</h2>
-                <p>LiIonKing fue fundada en 2023. Desde el inicio de sus actividades, todo el equipo se ha centrado en
-                    el
-                    desarrollo de electrónica especializada. En 2024, la empresa comienza a desarrollar y fabricar
-                    controladores
-                    de velocidad basados en procesadores para motores eléctricos como otras empresas más en del mundo.
-                    Desde entonces, la empresa se ha expandido un poquito: hoy en día apenas contamos con un equipo de 1
-                    ingeniero
-                    en tramite y nuestros componentes son algo dificil de mencioinar.
-                </p>
-            </div>
-        </section>
+        <article class="carta-g">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>LiIonKing es una empresa enfocada en el desarrollo y fabricación de soluciones de última generación en
+                el área de control de motores eléctricos BLDC y PMSM para aplicaciones industriales y Vehículos
+                Eléctricos . Los exclusivos sistemas de gestión de baterías BMS para la gestión compleja de
+                almacenamiento de energía, cargadores industriales, paquetes de baterías, electrónica especial, etc.
+                también forman parte de la cartera de productos de toda la empresa junto con el desarrollo y la
+                fabricación personalizados . MGM COMPRO también importa baterías para aplicaciones industriales. Entre
+                nuestros socios pertenecen tanto pequeñas como grandes empresas, corporaciones internacionales,
+                ejércitos, centros de investigación y universidades .</p>
+        </article>
+
     </main>
 
     <footer>
@@ -181,10 +130,15 @@
         <a href="imagenes/condiciones.png">condiciones de uso</a>
         <p>Todos los derechos reservados</p>
     </footer>
+    <!--Bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-        
+    <!--AOS js-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

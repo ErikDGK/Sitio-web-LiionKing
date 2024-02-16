@@ -1,3 +1,41 @@
-.carta{
+.carta-b{ 
+    background-color: azure;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px 30px;
+    h2{
+        color: rgb(0, 166, 255);
+    }
+    img{
+        height: 85%;
+        object-fit: fill;
+    }
+}
+ 
+.carta-g{
+    background-color: rgb(46, 46, 46);
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
     width: auto;
+    padding: 20px;
+    margin: 20px;
+    border: 5px;
+    border-radius: 10px;
+    border-color: black;
+    background-size: contain;
+    h2{
+        color: white;
+        font-size: 2.5em;
+    }
+    p{
+        color: white;
+        font-size: 1.5em;
+    }
+
 }
