@@ -10,6 +10,23 @@
     align-items: $align;
 }
 
+@mixin cartita ($heig, $backCol, $textCol, $hSiz, $pSiz ){
+    height: $heig;
+    background-color: $backCol;
+    text-align: center;
+    padding: 30px;
+    margin: 20px 2px;
+    border: 5px;
+    border-radius: 10px;
+    h2{
+        color: $textCol;
+        font-size: $hSiz;
+    }
+    p{
+        color: $textCol;
+        font-size: $pSiz;
+    }
+}
 /*
 main{
     @include flexb( flex , row , nowrap , center , center )
