@@ -1,0 +1,10 @@
+footer{
+    box-shadow: 1px 1px 1px 1px map-get($map: $colores, $key: liionluz);
+    padding: 5%;
+    background: black;
+    h5{
+        color: $liion;
+        text-shadow: 0px 0px 1px black;
+    }
+}
+

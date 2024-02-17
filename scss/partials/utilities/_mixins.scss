@@ -1,14 +1,4 @@
 /*mixin sin argumentos*/
-@mixin nombremixin(){
-    background-color: aquamarine;
-}
-
-@mixin flexb ( $dis, $direccion, $corte, $just, $align ){
-    display: $dis;
-    flex-flow: $direccion $corte;
-    justify-content: $just;
-    align-items: $align;
-}
 
 @mixin cartita ($heig, $backCol, $textCol, $hSiz, $pSiz ){
     height: $heig;
@@ -27,31 +17,3 @@
         font-size: $pSiz;
     }
 }
-/*
-main{
-    @include flexb( flex , row , nowrap , center , center )
-}
-
-section{
-    @include flexb( flex , column , nowrap , flex-start , flex-start )
-}
-*/
-/*
-@mixin grid($columnas , $espacio){
-    display: grid;
-    grid-template-columns: repeat($columnas, 1fr);
-    gap: $espacio;
-
-@media screen and (max-width:480px) {
-    grid-template-columns: 1fr;
-    gap: 0em;
-}
-}
-main{
-    @include grid(4 , 1em )
-}
-section{
-    @include grid(3, 1em )
-}
-*/
-

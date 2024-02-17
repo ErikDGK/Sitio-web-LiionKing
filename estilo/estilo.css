@@ -1,36 +1,12 @@
 /*colores */
 /*mixin sin argumentos*/
-/*
-main{
-    @include flexb( flex , row , nowrap , center , center )
-}
-
-section{
-    @include flexb( flex , column , nowrap , flex-start , flex-start )
-}
-*/
-/*
-@mixin grid($columnas , $espacio){
-    display: grid;
-    grid-template-columns: repeat($columnas, 1fr);
-    gap: $espacio;
-
-@media screen and (max-width:480px) {
-    grid-template-columns: 1fr;
-    gap: 0em;
-}
-}
-main{
-    @include grid(4 , 1em )
-}
-section{
-    @include grid(3, 1em )
-}
-*/
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 * {
   margin: 0px;
   top: 0px; }
+
+body {
+  background-color: black; }
 
 @media (min-width: 354px) and (max-width: 380px) {
   nav h1 {
@@ -42,10 +18,8 @@ section{
     /* basado en la pantalla de; galaxy fold cuya pantalla es 280px*/ }
 
   h2 {
-    font-size: 1.5rem !important; } }
-main {
-  background-color: #3c3c3c; }
-
+    font-size: 1.5rem !important;
+    text-shadow: 1px 1px 1px black; } }
 /*///////////////////video presentacion*/
 #video-container {
   position: relative; }
@@ -57,12 +31,12 @@ video {
   filter: brightness(0.5); }
 
 #texto-superpuesto {
+  color: #00ECFF;
   position: absolute;
   top: 50%;
   right: 10%;
   left: 50%;
   transform: translateY(-50%);
-  color: #00ECFF;
   font-size: 1rem;
   text-shadow: 2px 2px 4px black; }
   #texto-superpuesto h2 {
@@ -97,8 +71,12 @@ a {
 .container2 {
   width: 100%; }
 
+.w-100 {
+  background-color: black;
+  height: 480px; }
+
 nav {
-  background-color: #363636;
+  background-color: #2d2d2d;
   width: 100%;
   display: flex; }
   nav div a {
@@ -107,7 +85,8 @@ nav {
       font-size: 2.5rem;
       color: #00ECFF;
       font-weight: bolder;
-      font-style: oblique; }
+      font-style: oblique;
+      text-shadow: 1px 1px 1px black; }
       nav div a h1:hover {
         transition: 0.8s;
         text-shadow: 3px 3px 6px black; }
@@ -131,6 +110,7 @@ nav {
   color: #00ECFF; }
   .nav-link:hover {
     color: #f4ec0a;
+    text-decoration: overline;
     text-shadow: 3px 3px 6px black;
     transition: 0.6s; }
 
@@ -148,36 +128,42 @@ nav {
   background-size: 100%; }
 
 .active {
+  color: #2d2d2d !important;
   font-weight: bolder;
   font-style: oblique;
-  text-decoration-line: overline; }
+  text-decoration-line: overline;
+  text-shadow: 2px 1px 2px black; }
 
-.w-100 {
-  background-color: black;
-  height: 480px; }
+footer {
+  box-shadow: 1px 1px 1px 1px #f4ec0a;
+  padding: 5%;
+  background: black; }
+  footer h5 {
+    color: #00ECFF;
+    text-shadow: 0px 0px 1px black; }
 
 .carta-b {
   height: 300px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.4);
   text-align: center;
   padding: 30px;
   margin: 20px 2px;
   border: 5px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  text-shadow: 1px 1px 1px #2d2d2d; }
   .carta-b h2 {
-    color: #00a6ff;
+    color: whitesmoke;
     font-size: 2em; }
   .carta-b p {
-    color: #00a6ff;
+    color: whitesmoke;
     font-size: 1em; }
   .carta-b img {
-    width: 100%;
-    height: 200px;
-    /*object-fit: cover;*/ }
+    width: 310px;
+    height: 200px; }
 
 .carta-g {
   height: min-content;
-  background-color: #2e2e2e;
+  background-color: #2d2d2d;
   text-align: center;
   padding: 30px;
   margin: 20px 2px;
@@ -188,7 +174,8 @@ nav {
   justify-content: center;
   width: auto;
   border-color: black;
-  background-size: contain; }
+  background-size: contain;
+  text-shadow: 0px 0px 2px black; }
   .carta-g h2 {
     color: white;
     font-size: 2.5em; }
@@ -198,5 +185,12 @@ nav {
 
 main {
   background-color: black; }
+
+.hom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center; }
 
 /*# sourceMappingURL=estilo.css.map */

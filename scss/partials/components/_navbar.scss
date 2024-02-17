@@ -1,5 +1,10 @@
+.w-100{
+    background-color: black;
+    height:480px ;
+}
+
 nav {
-    background-color: $liongris;
+    background-color: $liiongris;
     width: 100%;
     display: flex;
 
@@ -12,6 +17,7 @@ nav {
                 color: $liion;
                 font-weight: bolder;
                 font-style: oblique;
+                text-shadow: 1px 1px 1px black;
                 &:hover {
                     transition: 0.8s;
                     text-shadow: 3px 3px 6px black;
@@ -47,6 +53,7 @@ nav {
 
     &:hover {
         color: $liionluz;
+        text-decoration: overline;
         text-shadow: 3px 3px 6px black;
         transition: 0.6s;
     }
@@ -69,7 +76,9 @@ nav {
 }
 
 .active {
+    color: $liiongris !important;
     font-weight: bolder;
     font-style: oblique;
     text-decoration-line: overline;
+    text-shadow: 2px 1px 2px black;
 }

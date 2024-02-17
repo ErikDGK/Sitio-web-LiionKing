@@ -1,21 +1,21 @@
 .carta-b{ 
-    @include cartita(300px , white, rgb(0, 166, 255), 2em, 1em );
-
+    @include cartita(300px , rgba(255, 255, 255, 0.4), whitesmoke , 2em, 1em );
+    
+    text-shadow: 1px 1px 1px $liiongris;
     img{
-        width: 100%;
+        width: 310px;
         height: 200px;
-        /*object-fit: cover;*/
     }
 }
  
 .carta-g{
-    @include cartita(min-content, rgb(46,46,46), white, 2.5em, 1em);
- 
+    @include cartita(min-content, $liiongris, white, 2.5em, 1em);
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: auto;
     border-color: black;
     background-size: contain;
-
+    text-shadow: 0px 0px 2px black;
 }
